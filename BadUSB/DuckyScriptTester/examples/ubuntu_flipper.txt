@@ -1,0 +1,68 @@
+REM Open terminal
+CTRL-ALT t
+DELAY 1000
+
+REM Get some data
+STRING whoami
+ENTER
+STRING lsb_release -a
+ENTER
+
+
+REM Open editor and print The Flipper
+
+GUI
+DELAY 500
+STRING text
+DELAY 500
+ENTER
+DELAY 5000
+
+STRING =
+REPEAT 59
+ENTER
+ENTER
+
+STRING               _.-------.._                    -,
+ENTER
+HOME
+STRING           .-"```"--..,,_/ /`-,               -,  \
+ENTER
+HOME
+STRING        .:"          /:/  /'\  \     ,_...,  `. |  |
+ENTER
+HOME
+STRING       /       ,----/:/  /`\ _\~`_-"`     _;
+ENTER
+HOME
+STRING      '      / /`"""'\ \ \.~`_-'      ,-"'/
+ENTER
+HOME
+STRING     |      | |  0    | | .-'      ,/`  /
+ENTER
+HOME
+STRING    |    ,..\ \     ,.-"`       ,/`    /
+ENTER
+HOME
+STRING   ;    :    `/`""\`           ,/--==,/-----,
+ENTER
+HOME
+STRING   |    `-...|        -.___-Z:_______J...---;
+ENTER
+HOME
+STRING   :         `                           _-'
+ENTER
+HOME
+STRING  _L_  _     ___  ___  ___  ___  ____--"`
+ENTER
+HOME
+STRING | __|| |   |_ _|| _ \| _ \| __|| _ \
+ENTER
+HOME
+STRING | _| | |__  | | |  _/|  _/| _| |   /
+ENTER
+HOME
+STRING |_|  |____||___||_|  |_|  |___||_|_\
+ENTER
+HOME
+ENTER
