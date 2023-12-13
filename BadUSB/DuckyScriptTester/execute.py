@@ -43,12 +43,12 @@ def _execute_line(line: str, history: list[str], env: DuckEnv) -> None:
             _execute_line(history[-1], history[:-1], env)
 
     # Flipper Zero additional syntax
-    elif cmd in ['ALTCHAR']:
+    elif cmd in ['ALTCHAR']: # TODO: Windows only
         with pyautogui.hold('alt'):
             pyautogui.press(list(args))
-    elif cmd in ['ALTSTRING', 'ALTCODE']:
-        raise NotImplementedError
-    elif cmd in ['SYSRQ']:
+    elif cmd in ['ALTSTRING', 'ALTCODE']: # TODO
+        pyautogui.typewrite(args, interval=0.005)
+    elif cmd in ['SYSRQ']: # TODO
         raise NotImplementedError
 
     # Just key sequence
